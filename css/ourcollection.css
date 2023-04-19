@@ -1,0 +1,361 @@
+@import url('https://fonts.cdnfonts.com/css/tex-gyre-termes');
+
+body{
+    background-color: rgba(255, 249, 241);
+    font-family: 'TeXGyreTermes', sans-serif;
+    margin: auto;
+
+}
+
+h1{
+    font-size: 55px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+   }
+
+h2{
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+   }
+
+header p{
+    text-align: center;
+    padding: 0;
+	margin: 0;
+   }
+
+
+header{
+    margin: 0;            
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.our-collection{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+margin: auto;
+margin-top: 50px;
+}
+
+
+.decor-description{
+	max-width: 485px;
+	text-align: justify;
+	margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0;
+}
+
+.decor p{
+	text-align: center;
+}
+
+.dining{
+    grid-area: collection;
+}
+
+.dining p{
+	text-align: center;
+}
+
+.dining-description{
+    max-width: 485px;
+	text-align: justify;
+	margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0;
+    
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:link,  a:visited,  a:hover, a:active {
+	text-decoration: none;
+}
+
+  .zoom {
+	transition: opacity 0.5s;
+	display: block;
+	width: 100%;
+	padding: 0;
+	max-width: 100%;
+	max-height: 100%;
+  }
+
+
+
+ .zoom:hover {
+	background-position: 50% 50%;
+	position: relative;
+	border: 1px solid gray;
+	box-shadow: -1px 5px 5px black;
+	overflow: hidden;
+  }
+  
+ 
+/* FOOTER */ 
+
+/* FOOTER */
+
+footer{
+    background-color: lightgray;
+	margin-top: 50px;
+}
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px TeXGyreTermes;
+	text-align: left;
+	/* padding: 30px 40px 20px; */
+	overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+
+/* Footer links */
+
+.footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-links :hover{
+	background: rgba(0, 0, 0, 0.3);
+}
+
+a{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* Footer Right */
+
+
+form > p{
+	display: inline-block;
+	vertical-align: top;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+form{
+	display: inline-block;
+}
+
+form input,
+form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.footer-distributed form textarea{
+	height: 90px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+    }
+    
+.button:hover{
+	background-color: #1f2022;
+	border: 1px solid white;
+}
+
+/* TABLET */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+	.our-collection{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin: auto;
+		margin-top: 50px;
+		width: 100%;
+		}
+		
+	p, .decor-description, .dining-description{
+		width: 100%;
+	}
+
+/* FOOTER */
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+}
+
+.footer-distributed .footer-left{
+		margin-bottom: 40px;
+}
+
+.footer-distributed form{
+		margin-top: 30px;
+}
+
+.footer-distributed form{
+		display: block;
+}
+
+.footer-distributed form button{
+		float: none;
+}
+
+input[type="text"], .textmessage {
+        width: 95%;
+        resize: vertical;
+
+} 
+	
+}
+
+/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+
+	.our-collection{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin: auto;
+		margin-top: 50px;
+		width: 100%;
+		}
+
+	.zoom {
+		width: 70%;
+		margin: auto;
+		}
+
+	p, .decor-description, .dining-description{
+		width: 70%;
+		margin: auto;
+	}
+
+	h1{
+		font-size: 40px;
+	}
+
+	h2{
+		font-size: 30px;
+	}
+
+
+	header>p{
+		margin: auto;
+	}
+/* FOOTER */
+
+.footer-distributed{
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-left,
+.footer-right{
+	margin: 0 auto;
+}
+
+.footer-left{
+	margin-bottom: 40px;
+}
+
+form{
+	margin-top: 30px;
+	/* text-align: center; */
+	  }
+
+input[type="text"], .textmessage {
+	width: 95%;
+	resize: vertical;
+} 
+
+.footer-distributed form{
+	display: block;
+}
+
+.footer-distributed form button{
+	float: none;
+} 
+
+}
